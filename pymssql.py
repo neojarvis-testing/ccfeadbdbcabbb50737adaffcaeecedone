@@ -1,6 +1,6 @@
 import pyodbc
 connectionString = "Driver={ODBC Driver 17 for SQL Server};UID=sa;PWD=examlyMssql@123; server=localhost;Database=testDharan;Trusted_Connection=No;Persist Security Info=False;Encrypt=No"
-pyodbc.connect(connectionString)
+conn = pyodbc.connect(connectionString)
 cursor = conn.cursor()
 
 # Step 1: Create a new table (if not exists)
